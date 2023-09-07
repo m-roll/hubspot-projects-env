@@ -23,15 +23,15 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1694100608,
-        "narHash": "sha256-mK4mg2ad8m/nKoSnDtDXr03X+6IxjgWbmvsGac/XlJM=",
-        "owner": "m-roll",
+        "lastModified": 1686315622,
+        "narHash": "sha256-ccqZqY6wUFot0ewyNKQUrMR6IEliGza+pjKoSVMXIeM=",
+        "owner": "serokell",
         "repo": "nix-npm-buildpackage",
-        "rev": "79c551f1fb219fb923a2d94d5aae0a49c831307c",
+        "rev": "991a792bccd611842f6bc1aa99fe80380ad68d44",
         "type": "github"
       },
       "original": {
-        "owner": "m-roll",
+        "owner": "serokell",
         "repo": "nix-npm-buildpackage",
         "type": "github"
       }
@@ -52,11 +52,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1693771906,
-        "narHash": "sha256-32EnPCaVjOiEERZ+o/2Ir7JH9pkfwJZJ27SKHNvt4yk=",
+        "lastModified": 1694048570,
+        "narHash": "sha256-PEQptwFCVaJ+jLFJgrZll2shQ9VI/7xVhrCYkJo8iIw=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "da5adce0ffaff10f6d0fee72a02a5ed9d01b52fc",
+        "rev": "4f77ea639305f1de0a14d9d41eef83313360638c",
         "type": "github"
       },
       "original": {
