@@ -8,6 +8,9 @@
   outputs = { self, nixpkgs, flake-utils, nix-npm-buildpackage }:
     flake-utils.lib.eachDefaultSystem (system:
       let
+        pkgs = nixpkgs.legacyPackages.${system}.extend
+          nix-npm-buildpackage.overlays.default;
+        nodejs = pkgs.nodejs-18_x;
         overlay = (final: prev: {
           hubspot-cli = pkgs.buildYarnPackage {
             src = pkgs.fetchFromGitHub {
@@ -17,15 +20,13 @@
               rev = "0f88273233124d513c4338fed7bd01fa4678251d";
               sha256 = "sha256-Kt8KcEsP85plrE2RjbujXW0rpF7/4BJG3XiGHDWPVi0=";
             };
+            postInstall = ''
+                            makeWrapper $out/packages/cli/bin/hs $out/bin/hs 
+              	    '';
           };
-          subdir = "packages/cli";
         });
-        pkgs = nixpkgs.legacyPackages.${system}.extend
-          (nixpkgs.lib.composeManyExtensions [
-            overlay
-            nix-npm-buildpackage.overlays.default
-          ]);
-      in with pkgs; {
+        pkgs' = pkgs.extend overlay;
+      in with pkgs'; {
         devShells.default = mkShell { packages = [ hubspot-cli ]; };
       });
 }
