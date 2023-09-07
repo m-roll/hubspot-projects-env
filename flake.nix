@@ -1,9 +1,10 @@
 {
-  description = "My HubSpot project";
+  description = "HS dev environment";
 
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
-  inputs.nix-npm-buildpackage.url = "github:serokell/nix-npm-buildpackage";
+  # inputs.nix-npm-buildpackage.url = "github:serokell/nix-npm-buildpackage";
+  inputs.nix-npm-buildpackage.url = "github:m-roll/nix-npm-buildpackage";
 
   outputs = { self, nixpkgs, flake-utils, nix-npm-buildpackage }:
     flake-utils.lib.eachDefaultSystem (system:
@@ -26,7 +27,7 @@
             nix-npm-buildpackage.overlays.default
           ]);
       in with pkgs; {
-        devShells.default = mkShell { buildInputs = [ hubspot-cli ]; };
+        devShells.default = mkShell { packages = [ hubspot-cli ]; };
       });
 }
 
