@@ -43,11 +43,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1694471297,
-        "narHash": "sha256-cyPUKcfEg2/u3G0CutKGFBWUHqCTUBP6kDXw3Lq0efg=",
+        "lastModified": 1694473285,
+        "narHash": "sha256-igJ1p9TwEoKpN9DnuxCZWh6WX2ksHZoZxhMPVDb3zog=",
         "owner": "m-roll",
         "repo": "hubspot-cli-flake",
-        "rev": "acf4d51effbfe64068b90fc35271ac6965a10f2d",
+        "rev": "f426dfca3ee27205ec0be91aa9d3bf483ff4542a",
         "type": "github"
       },
       "original": {
