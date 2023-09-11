@@ -8,6 +8,7 @@ This is a made-up company to showcase a project flow for HubSpot projects. The g
 - [ ] Encrypt user credentials and inject into dev environment (maybe, not sure how much sense this makes)
 - [ ] Use localtunnel to simulate locally running serverless functions.
 - [ ] Catch shell exit and delete transient projects used for local serverless development.
+- [ ] Use github workflows to reject un-formatted code.
 
 ### Reach goals
 - [ ] Leverage typescript to make type-safe interactions between cards and serverless function.

@@ -18,20 +18,20 @@
         "type": "github"
       }
     },
-    "nix-npm-buildpackage": {
+    "hubspot-cli": {
       "inputs": {
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1686315622,
-        "narHash": "sha256-ccqZqY6wUFot0ewyNKQUrMR6IEliGza+pjKoSVMXIeM=",
-        "owner": "serokell",
+        "lastModified": 1694101928,
+        "narHash": "sha256-0QbGDKdX1vG/GTIpCk3Lr/a12X6IJymvA8ZTIfc3e2E=",
+        "owner": "m-roll",
         "repo": "nix-npm-buildpackage",
-        "rev": "991a792bccd611842f6bc1aa99fe80380ad68d44",
+        "rev": "dc5089920c4bb23f64599d78cdfbc51486279b3c",
         "type": "github"
       },
       "original": {
-        "owner": "serokell",
+        "owner": "m-roll",
         "repo": "nix-npm-buildpackage",
         "type": "github"
       }
@@ -52,11 +52,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1694048570,
-        "narHash": "sha256-PEQptwFCVaJ+jLFJgrZll2shQ9VI/7xVhrCYkJo8iIw=",
+        "lastModified": 1694304580,
+        "narHash": "sha256-5tIpNodDpEKT8mM/F5zCzWEAnidOg8eb1/x3SRaaBLs=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "4f77ea639305f1de0a14d9d41eef83313360638c",
+        "rev": "4c8cf44c5b9481a4f093f1df3b8b7ba997a7c760",
         "type": "github"
       },
       "original": {
@@ -69,7 +69,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nix-npm-buildpackage": "nix-npm-buildpackage",
+        "hubspot-cli": "hubspot-cli",
         "nixpkgs": "nixpkgs_2"
       }
     },
